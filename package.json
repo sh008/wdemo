@@ -1,6 +1,7 @@
 {
   "name": "wize-dashboard",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "shayan davoodi",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
