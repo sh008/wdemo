@@ -1,15 +1,49 @@
 <div class="body">
     <div class="wrapper">
         <div class="container">
-            <h1><div class="logo"></div></h1>
-            
-            <form class="form">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button type="submit" id="login-button">Login</button>
-            </form>
+            <h1>
+                <div class="logo"></div>
+            </h1>
+            <div class="form" *ngIf='model.showLogin' [@inOutAnimation]>
+                <h3>Sign in</h3>
+                <div *ngIf='model.error.length' class="error-message">
+                    <ul>
+                        <li *ngFor='let err of model.error' class="text-danger">
+                            {{err}}
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <input type="text" placeholder="Email" [(ngModel)]='model.email'>
+                <input type="password" placeholder="Password" [(ngModel)]='model.password'>
+                <button type="submit" id="login-button" (click)='login()'>
+                    <span *ngIf='!model.loader'>Login</span>
+                    <span *ngIf='model.loader'><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </button>
+                <a class="link" (click)='switchPage()'>Don't have an account yet?</a>
+            </div>
+            <div class="form" *ngIf='!model.showLogin' [@inOutAnimation]>
+                <h3>Sign up</h3>
+                <div *ngIf='model.error.length' class="error-message">
+                    <ul>
+                        <li *ngFor='let err of model.error' class="text-danger">
+                            {{err}}
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <input type="text" placeholder="Email" [(ngModel)]='model.email'>
+                <input type="password" placeholder="Password" [(ngModel)]='model.password'>
+                <input type="password" placeholder="Confirm Password" [(ngModel)]='model.repassword'>
+                <button type="submit" id="login-button" (click)='register()'>
+                    <span *ngIf='!model.loader'>Register</span>
+                    <span *ngIf='model.loader'><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </button>
+                <a class="link" (click)='switchPage()'>Do You have Account?</a>
+            </div>
         </div>
-         
+
         <ul class="bg-bubbles">
             <li></li>
             <li></li>

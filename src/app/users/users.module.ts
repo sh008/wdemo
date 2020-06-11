@@ -6,13 +6,19 @@ import { UsersComponent } from './users.component';
 import { MasterComponent } from './_layout/master/master.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [UsersComponent, MasterComponent, LoginComponent, DashboardComponent],
+  declarations: [
+    UsersComponent,
+    MasterComponent,
+    LoginComponent,
+    DashboardComponent
+  ],
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    FormsModule
   ]
 })
 export class UsersModule { }

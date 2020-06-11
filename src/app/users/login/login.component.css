@@ -2,12 +2,12 @@
   .body{
     height: 100vh;
     background: #50a3a2;
-    background: -webkit-gradient(linear, left top, right bottom, from(#e1f3f3), to(#50a3a2));
-    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    background: -webkit-gradient(linear, left top, right bottom, from(#e1f3f3), to(#48aaad));
+    background: linear-gradient(to bottom right, #48aaad 0%, #36c5da 100%);
   }
   .wrapper {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0;
     width: 100%;
     margin-top: -200px;
@@ -20,7 +20,7 @@
   .container {
     max-width: 600px;
     margin: 0 auto;
-    height: 400px;
+    height: 90vh;
     text-align: center;
   }
   .container h1 {
@@ -31,18 +31,18 @@
             transition-timing-function: ease-in-put;
     font-weight: 200;
   }
-  form {
+  .form {
     position: relative;
     z-index: 2;
   }
-  form input {
+  .form input {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     outline: 0;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.2);
-    width: 250px;
+    width: 350px;
     border-radius: 3px;
     padding: 10px 15px;
     margin: 0 auto 10px auto;
@@ -54,15 +54,15 @@
             transition-duration: 0.25s;
     font-weight: 300;
   }
-  form input:hover {
+  .form input:hover {
     background-color: rgba(255, 255, 255, 0.4);
   }
-  form input:focus {
+  .form input:focus {
     background-color: white;
-    width: 300px;
-    color: #53e3a6;
+    width: 400px;
+    color: #36c5da;
   }
-  form button {
+  .form button {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -70,7 +70,7 @@
     background-color: white;
     border: 0;
     padding: 10px 15px;
-    color: #53e3a6;
+    color: #36c5da;
     border-radius: 3px;
     width: 250px;
     cursor: pointer;
@@ -78,7 +78,7 @@
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
   }
-  form button:hover {
+  .form button:hover {
     background-color: #f5f7f9;
   }
   .bg-bubbles {
@@ -198,4 +198,18 @@
     width: 170px;
     height:60px;
     background-repeat: no-repeat;
+  }
+  .link{
+    display: block;
+    margin-top:5px;
+    color: white;
+    cursor: pointer;
+  }
+  ul{
+    list-style-type:none
+  }
+  .error-message{
+    
+    text-align: initial;
+
   }
