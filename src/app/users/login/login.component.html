@@ -7,8 +7,8 @@
             <div class="form" *ngIf='model.showLogin' [@inOutAnimation]>
                 <h3>Sign in</h3>
                 <div *ngIf='model.error.length' class="error-message">
-                    <ul>
-                        <li *ngFor='let err of model.error' class="text-danger">
+                    <ul class="alert alert-info">
+                        <li *ngFor='let err of model.error'>
                             {{err}}
                         </li>
                     </ul>
@@ -26,8 +26,8 @@
             <div class="form" *ngIf='!model.showLogin' [@inOutAnimation]>
                 <h3>Sign up</h3>
                 <div *ngIf='model.error.length' class="error-message">
-                    <ul>
-                        <li *ngFor='let err of model.error' class="text-danger">
+                    <ul class="alert alert-info">
+                        <li *ngFor='let err of model.error'>
                             {{err}}
                         </li>
                     </ul>

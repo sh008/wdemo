@@ -20,7 +20,6 @@
   .container {
     max-width: 600px;
     margin: 0 auto;
-    height: 90vh;
     text-align: center;
   }
   .container h1 {
@@ -195,8 +194,8 @@
   .logo{
     margin: 0 auto;
     background-image: url('../../../assets/image/logo.png');
-    width: 170px;
-    height:60px;
+    width: 150px;
+    height:150px;
     background-repeat: no-repeat;
   }
   .link{
