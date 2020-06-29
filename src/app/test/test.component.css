@@ -1,0 +1,18 @@
+.box-wrapper {
+    box-shadow: rgba(143, 143, 143, 0.21) 0px 0px 2px 1px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    min-height: 250px;
+}
+
+.header {
+    color: #eeee;
+}
+
+.org-color {
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s;
+}

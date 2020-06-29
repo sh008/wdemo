@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row mt-1" [class]='isSubmit ? "org-color":"header"'>
+        <div class="col text-center">
+            Dashboard
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-md-3 col-1"></div>
+        <div class="col-md-6 col-10" [ngSwitch]='step'>
+
+            <div *ngSwitchCase='1' [@inOutAnimation] class="box-wrapper mt-4 p-4">
+                <p>شماره موبایل خود را وارد کنید</p>
+                <input type="text" class="form-control">
+                <br>
+                <button class="btn btn-success" (click)='changeStep(2)'>ادامه</button>
+            </div>
+            <div *ngSwitchCase='2' [@inOutAnimation] class="box-wrapper mt-4 p-4">
+                <p>کلمه عبور را وارد کنید</p>
+                <input type="text" class="form-control">
+                <br>
+                <button class="btn btn-success" (click)='changeStep(1)'>ادامه</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-1"></div>
+    </div>
+</div>

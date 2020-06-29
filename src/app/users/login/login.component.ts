@@ -3,6 +3,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 import { UtilServiceService } from 'src/app/_services/util-service.service';
 import { Router } from '@angular/router';
 declare const $: any;
+//signup users if page is refresh this clear
 export var users = []
 export class SignModel {
   email: string;
