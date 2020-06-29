@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.11",
+    "@angular/cdk": "^9.2.4",
     "@angular/common": "~9.1.11",
     "@angular/compiler": "~9.1.11",
     "@angular/core": "~9.1.11",
@@ -20,7 +21,11 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+<<<<<<< HEAD
     "@leapdev/leap-host": "^1.2.10",
+=======
+    "@swimlane/ngx-charts": "^14.0.0",
+>>>>>>> 61d06944c505698a1a456bb97447cf4a9d8668a1
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",

@@ -62,8 +62,10 @@ export class LoginComponent implements OnInit {
       this.model.loader = true;
       await this.utilService.sleep(1);
       let user = users.find(x => x.pass = this.model.password && x.email == this.model.email);
-      if (user)
+      if (user) {
+        localStorage.setItem('isLogin', 'y');
         this.router.navigate(['/']);
+      }
       else
         throw 'Invalid email and password'
     } catch (e) {
